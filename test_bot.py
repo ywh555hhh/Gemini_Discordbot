@@ -54,7 +54,7 @@ def get_or_create_channel_model(channel_id):
     system_instruction = ROLE_PRESETS.get(current_role_name, ROLE_PRESETS[DEFAULT_ROLE])
     try:
         model = genai.GenerativeModel(
-            model_name="models/gemini-1.5-flash-preview-0514", # 请确保模型名称正确
+            model_name="models/gemini-2.5-flash-preview-05-20", # 请确保模型名称正确
             system_instruction=system_instruction
         )
         # print(f"频道ID {channel_id} - 使用角色 '{current_role_name}' 创建/获取模型成功。")
